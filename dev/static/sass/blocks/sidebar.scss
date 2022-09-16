@@ -1,0 +1,27 @@
+.sidebar {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+
+    width: 264px;
+    padding: 16px;
+
+    box-shadow: 0 10px 20px rgba(54, 78, 126, 0.25);
+    border-radius: var(--radius-4);
+    background-color: var(--white);
+
+    transform: translateX(-50%);
+
+    &__title {
+        font-size: var(--heading-s);
+        font-weight: 700;
+        letter-spacing: 2.4px;
+        text-transform: uppercase;
+        color: var(--gray-300);
+    }
+
+    .menu {
+        margin-top: 18px;
+        margin-left: -16px;
+    }
+}

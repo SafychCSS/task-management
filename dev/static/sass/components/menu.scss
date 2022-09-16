@@ -1,0 +1,44 @@
+.menu {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    &__item {
+    }
+
+    &__icon {
+        width: 16px;
+        height: 16px;
+
+        fill: currentColor;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 14px 24px;
+
+        font-size: var(--heading-m);
+        font-weight: 700;
+        line-height: 20px;
+        text-transform: capitalize;
+        color: var(--gray-300);
+
+        border-radius: 0 100px 100px 0;
+
+        &:hover {
+            color: var(--purple-500);
+        }
+
+        &_active {
+            color: var(--white);
+            background-color: var(--purple-500);
+
+            &:hover {
+                color: var(--white);
+            }
+        }
+    }
+}

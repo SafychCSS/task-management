@@ -13,7 +13,7 @@ body {
 }
 
 body {
-    font-size: 15px;
+    font-size: var(--text-l);
     font-weight: 500;
     line-height: 1.3;
     font-family: 'Plus Jakarta Sans', sans-serif;
@@ -37,6 +37,8 @@ button {
 a {
     color: inherit;
     text-decoration: none;
+
+    transition: .2s;
 
     &:hover,
     &:focus {
