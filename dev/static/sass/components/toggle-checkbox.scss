@@ -1,0 +1,39 @@
+.toggle-checkbox {
+    &__btn {
+        position: relative;
+
+        display: inline-block;
+        width: 40px;
+        height: 20px;
+        padding: 3px;
+
+        line-height: 1;
+
+        background-color: var(--purple-500);
+        border-radius: var(--radius-5);
+
+        cursor: pointer;
+
+        transition: .2s;
+
+        &::after {
+            position: absolute;
+            content: '';
+
+            width: 14px;
+            height: 14px;
+
+            border-radius: 100%;
+            background-color: var(--white);
+
+            transition: .2s;
+            transform: translateX(20px);
+        }
+    }
+
+    input:checked + .toggle-checkbox__btn{
+        &::after {
+            transform: translateX(0);
+        }
+    }
+}

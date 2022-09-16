@@ -5,12 +5,19 @@
 
     width: 264px;
     padding: 16px;
+    opacity: 0;
+    visibility: hidden;
 
     box-shadow: 0 10px 20px rgba(54, 78, 126, 0.25);
     border-radius: var(--radius-4);
     background-color: var(--white);
 
     transform: translateX(-50%);
+
+    &_active {
+        opacity: 1;
+        visibility: visible;
+    }
 
     &__title {
         font-size: var(--heading-s);
@@ -23,5 +30,9 @@
     .menu {
         margin-top: 18px;
         margin-left: -16px;
+    }
+
+    &__theme {
+        margin-top: 16px;
     }
 }

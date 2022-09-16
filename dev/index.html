@@ -10,7 +10,7 @@
 <body>
     <div class="wrapper">
         //= blocks/header.html
-        <div class="sidebar">
+        <div class="sidebar sidebar_active">
             <p class="sidebar__title">All boards (3)</p>
             <ul class="menu sidebar__menu">
                 <li class="menu__item">
@@ -47,7 +47,20 @@
                 </li>
             </ul>
             <div class="toggle-theme sidebar__theme">
-                toggle-theme
+                <div class="toggle-theme__action">
+                    <svg class="toggle-theme__light">
+                        <use href="./static/img/svg/sprite.svg#icon-sun"></use>
+                    </svg>
+                    <div class="toggle-checkbox">
+                        <label>
+                            <input class="visibility-hidden toggle-checkbox__input" type="checkbox">
+                            <span class="toggle-checkbox__btn"></span>
+                        </label>
+                    </div>
+                    <svg class="toggle-theme__dark">
+                        <use href="./static/img/svg/sprite.svg#icon-moon"></use>
+                    </svg>
+                </div>
             </div>
         </div>
         <main class="main">
