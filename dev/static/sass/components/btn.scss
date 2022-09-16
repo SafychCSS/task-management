@@ -7,6 +7,8 @@
     background-color: var(--purple-500);
     border-radius: var(--radius-7);
 
+    cursor: pointer;
+
     &_new-task {
         min-width: 48px;
         padding: 8px 0;
@@ -22,6 +24,8 @@
 .btn-action-board {
     width: 4px;
     height: 16px;
+
+    cursor: pointer;
 
     span {
         position: relative;
