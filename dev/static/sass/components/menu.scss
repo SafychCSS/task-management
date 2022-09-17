@@ -25,6 +25,7 @@
 
         &:hover {
             color: var(--purple-500);
+            background-color: rgba(99, 95, 199, .1);
         }
 
         &_active {
@@ -33,6 +34,7 @@
 
             &:hover {
                 color: var(--white);
+                background-color: var(--purple-500);
             }
         }
     }
