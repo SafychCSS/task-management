@@ -25,6 +25,19 @@
             fill: currentColor;
         }
     }
+
+    &_disabled {
+        background-color: rgba(99, 95, 199, .25);
+        cursor: default;
+
+        &:hover {
+            background-color: rgba(99, 95, 199, .25);
+        }
+
+        &:active {
+            background-color: var(--red-400);
+        }
+    }
 }
 
 .btn-action-board {
