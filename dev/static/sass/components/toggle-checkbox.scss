@@ -29,6 +29,10 @@
             transition: .2s;
             transform: translateX(20px);
         }
+
+        &:hover {
+            background-color: var(--purple-300);
+        }
     }
 
     input:checked + .toggle-checkbox__btn{
