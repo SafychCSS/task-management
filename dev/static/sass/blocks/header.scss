@@ -4,6 +4,8 @@
 
     background-color: var(--bg-main);
 
+    transition: .2s;
+
     &__row {
         gap: 16px;
     }

@@ -1,0 +1,30 @@
+.task {
+    width: 280px;
+    padding: 24px 16px;
+
+    font-weight: 700;
+
+    background-color: var(--bg-main);
+    box-shadow: 0 4px 6px rgba(54, 78, 126, 0.1);
+    border-radius: var(--radius-4);
+
+    &:hover {
+        .task__title {
+            color: var(--purple-500);
+        }
+    }
+
+    &__title {
+        font-size: var(--heading-m);
+        color: var(--clr-main);
+
+        transition: .2s;
+    }
+
+    &__sub-tasks-count {
+        margin-top: 8px;
+
+        font-size: var(--heading-s);
+        color: var(--clr-secondary);
+    }
+}

@@ -1,5 +1,59 @@
 .board {
     display: flex;
-    height: 100%;
     flex: 1;
+    gap: 24px;
+    height: 100%;
+    padding-top: 24px;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__status {
+        position: relative;
+
+        margin-bottom: 4px;
+        padding-left: 27px;
+
+        font-size: var(--heading-s);
+        text-transform: uppercase;
+        letter-spacing: 2.4px;
+        color: var(--clr-secondary);
+
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            content: '';
+
+            width: 15px;
+            height: 15px;
+
+            border-radius: 100%;
+
+            transform: translateY(-50%);
+        }
+
+        &_wait {
+            &::before {
+                background-color: #49C4E5;
+            }
+        }
+
+        &_process {
+            &::before {
+                background-color: #8471F2;
+            }
+        }
+
+        &_completed {
+            &::before {
+                background-color: #67E2AE;
+            }
+        }
+    }
+
+    &__item {}
 }
