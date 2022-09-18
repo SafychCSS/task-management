@@ -19,14 +19,39 @@ body {
     font-weight: 500;
     line-height: 1.3;
     font-family: 'Plus Jakarta Sans', sans-serif;
-    color: var(--gray-900);
+    color: var(--clr-main);
 
-    background-color: var(--gray-100);
+    background-color: var(--bg-secondary);
 
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    &.dark-theme {
+        --bg-main: var(--bg-main-dark);
+        --bg-secondary: var(--bg-secondary-dark);
+        --clr-lines: var(--clr-lines-dark);
+        --clr-main: #fff;
+
+        .menu {
+            &__link {
+                &:hover {
+                    color: var(--purple-500);
+                    background-color: var(--clr-main);
+                }
+
+                &_active {
+                    color: var(--clr-main);
+
+                    &:hover {
+                        color: var(--clr-main);
+                        background-color: var(--purple-500);
+                    }
+                }
+            }
+        }
+    }
 }
 
 button {

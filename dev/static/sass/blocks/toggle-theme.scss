@@ -1,7 +1,7 @@
 .toggle-theme {
     padding: 14px;
 
-    background-color: var(--gray-100);
+    background-color: var(--bg-secondary);
     border-radius: var(--radius-3);
 
     &__action {
@@ -10,7 +10,8 @@
         align-items: center;
         gap: 24px;
 
-        color: var(--gray-300);
+        line-height: 1;
+        color: var(--clr-secondary);
     }
 
     &__light {

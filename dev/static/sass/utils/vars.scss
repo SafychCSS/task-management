@@ -1,15 +1,16 @@
 :root {
     // colors
-    --white: #fff;
+    --bg-main: #fff;
+    --bg-main-dark: #2b2c37;
+    --bg-secondary: #f4f7fd;
+    --bg-secondary-dark: #20212C;
+
     --black: #000;
 
-    --gray-100: #f4f7fd;
-    --gray-200: #e4ebfa;
-    --gray-300: #828fa3;
-    --gray-600: #3e3f4e;
-    --gray-700: #2b2c37;
-    --gray-800: #20212C;
-    --gray-900: #000112;
+    --clr-main: #000112;
+    --clr-secondary: #828fa3;
+    --clr-lines: #e4ebfa;
+    --clr-lines-dark: #3e3f4e;
 
     --purple-300: #a8a4ff;
     --purple-500: #635fc7;

@@ -9,6 +9,10 @@
 
     &__image {
         display: none;
+        width: 112px;
+        height: 25px;
+
+        fill: currentColor;
     }
 
     @media (min-width: $screen-sm) {

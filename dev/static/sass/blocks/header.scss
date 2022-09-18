@@ -2,7 +2,7 @@
     position: relative;
     z-index: 12;
 
-    background-color: var(--white);
+    background-color: var(--bg-main);
 
     &__row {
         gap: 16px;
@@ -59,11 +59,11 @@
     }
 
     @media (min-width: $screen-sm) {
-        border-bottom: 1px solid var(--gray-200);
+        border-bottom: 1px solid var(--clr-lines);
 
         &__logo {
             width: 261px;
-            border-right: 1px solid var(--gray-200);
+            border-right: 1px solid var(--clr-lines);
         }
 
         &__board-name {

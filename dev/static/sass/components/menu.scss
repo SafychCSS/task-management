@@ -19,7 +19,7 @@
         font-weight: 700;
         line-height: 20px;
         text-transform: capitalize;
-        color: var(--gray-300);
+        color: var(--clr-secondary);
 
         border-radius: 0 100px 100px 0;
 
@@ -29,11 +29,11 @@
         }
 
         &_active {
-            color: var(--white);
+            color: var(--bg-main);
             background-color: var(--purple-500);
 
             &:hover {
-                color: var(--white);
+                color: var(--bg-main);
                 background-color: var(--purple-500);
             }
         }

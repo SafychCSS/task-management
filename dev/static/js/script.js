@@ -1,3 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-    console.log("it's work");
+    const themeToggle = document.querySelector('[data-theme="toggle"]');
+    themeToggle.addEventListener('input', () => {
+        document.body.classList.toggle('dark-theme');
+    });
 });
