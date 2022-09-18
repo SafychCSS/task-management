@@ -10,64 +10,70 @@
 <body>
     <div class="wrapper">
         //= blocks/header.html
-        <!-- active class sidebar_active -->
-        <div class="sidebar">
-            <div class="sidebar__container">
-                <p class="sidebar__title">All boards (3)</p>
-                <ul class="menu sidebar__menu">
-                    <li class="menu__item">
-                        <a class="menu__link menu__link_active" href="#">
-                            <svg class="menu__icon">
-                                <use href="./static/img/svg/sprite.svg#icon-menu"></use>
+        <div class="container container_board">
+            <!-- active class sidebar_active -->
+            <div class="sidebar">
+                <div class="sidebar__container">
+                    <p class="sidebar__title">All boards (3)</p>
+                    <ul class="menu sidebar__menu">
+                        <li class="menu__item">
+                            <a class="menu__link menu__link_active" href="#">
+                                <svg class="menu__icon">
+                                    <use href="./static/img/svg/sprite.svg#icon-menu"></use>
+                                </svg>
+                                Platform launch
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">
+                                <svg class="menu__icon">
+                                    <use href="./static/img/svg/sprite.svg#icon-menu"></use>
+                                </svg>
+                                Marketing plan
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">
+                                <svg class="menu__icon">
+                                    <use href="./static/img/svg/sprite.svg#icon-menu"></use>
+                                </svg>
+                                Roadmap
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">
+                                <svg class="menu__icon">
+                                    <use href="./static/img/svg/sprite.svg#icon-menu"></use>
+                                </svg>
+                                + Create new board
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="toggle-theme sidebar__theme">
+                        <div class="toggle-theme__action">
+                            <svg class="toggle-theme__light">
+                                <use href="./static/img/svg/sprite.svg#icon-sun"></use>
                             </svg>
-                            Platform launch
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">
-                            <svg class="menu__icon">
-                                <use href="./static/img/svg/sprite.svg#icon-menu"></use>
+                            <div class="toggle-checkbox">
+                                <label>
+                                    <input class="visibility-hidden toggle-checkbox__input" type="checkbox">
+                                    <span class="toggle-checkbox__btn"></span>
+                                </label>
+                            </div>
+                            <svg class="toggle-theme__dark">
+                                <use href="./static/img/svg/sprite.svg#icon-moon"></use>
                             </svg>
-                            Marketing plan
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">
-                            <svg class="menu__icon">
-                                <use href="./static/img/svg/sprite.svg#icon-menu"></use>
-                            </svg>
-                            Roadmap
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">
-                            <svg class="menu__icon">
-                                <use href="./static/img/svg/sprite.svg#icon-menu"></use>
-                            </svg>
-                            + Create new board
-                        </a>
-                    </li>
-                </ul>
-                <div class="toggle-theme sidebar__theme">
-                    <div class="toggle-theme__action">
-                        <svg class="toggle-theme__light">
-                            <use href="./static/img/svg/sprite.svg#icon-sun"></use>
-                        </svg>
-                        <div class="toggle-checkbox">
-                            <label>
-                                <input class="visibility-hidden toggle-checkbox__input" type="checkbox">
-                                <span class="toggle-checkbox__btn"></span>
-                            </label>
                         </div>
-                        <svg class="toggle-theme__dark">
-                            <use href="./static/img/svg/sprite.svg#icon-moon"></use>
-                        </svg>
                     </div>
                 </div>
             </div>
+            <main class="board">
+                <div class="board-empty">
+                    <p class="board-empty__text">This board is empty. Create a new column to get started.</p>
+                    <button class="btn board-empty__btn">+ Add New Column</button>
+                </div>
+            </main>
         </div>
-        <main class="main">
-        </main>
     </div>
     <script src="./static/js/script.min.js"></script>
 </body>
