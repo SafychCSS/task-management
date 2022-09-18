@@ -2,9 +2,6 @@
     position: relative;
     z-index: 12;
 
-    padding-top: 16px;
-    padding-bottom: 16px;
-
     background-color: var(--white);
 
     &__row {
@@ -12,6 +9,8 @@
     }
 
     &__logo {
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
 
     &__board {
@@ -57,5 +56,25 @@
 
     &__action-board {
         position: relative;
+    }
+
+    @media (min-width: $screen-sm) {
+        border-bottom: 1px solid var(--gray-200);
+
+        &__logo {
+            width: 261px;
+            border-right: 1px solid var(--gray-200);
+        }
+
+        &__board-name {
+            margin-left: 16px;
+
+            font-size: var(--heading-xl);
+            cursor: default;
+        }
+
+        &__board-icon {
+            display: none;
+        }
     }
 }

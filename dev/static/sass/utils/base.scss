@@ -97,6 +97,16 @@ ul {
     &_board {
         height: 100%;
     }
+
+    @media (min-width: $screen-sm) {
+        padding-left: 24px;
+        padding-right: 24px;
+
+        &_board {
+            display: flex;
+            gap: 24px;
+        }
+    }
 }
 
 .row {
