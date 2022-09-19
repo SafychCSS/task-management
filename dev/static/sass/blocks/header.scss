@@ -60,11 +60,18 @@
         position: relative;
     }
 
+    &__new-task-text {
+        display: none;
+    }
+
     @media (min-width: $screen-sm) {
         border-bottom: 1px solid var(--clr-lines);
 
         &__logo {
             width: 261px;
+            padding-top: 26px;
+            padding-bottom: 26px;
+
             border-right: 1px solid var(--clr-lines);
         }
 
@@ -75,8 +82,13 @@
             cursor: default;
         }
 
-        &__board-icon {
+        &__board-icon,
+        &__new-task-icon {
             display: none;
+        }
+
+        &__new-task-text {
+            display: inline;
         }
     }
 }

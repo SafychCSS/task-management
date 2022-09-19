@@ -57,6 +57,10 @@ body {
                 background-color: var(--clr-main);
             }
         }
+
+        .add-new-status {
+            background: linear-gradient(180deg, rgba(43, 44, 55, 0.25) 0%, rgba(43, 44, 55, 0.125) 100%);
+        }
     }
 }
 
@@ -126,7 +130,7 @@ ul {
     padding-right: 16px;
 
     &_board {
-        height: 100%;
+        flex: 1;
     }
 
     @media (min-width: $screen-sm) {

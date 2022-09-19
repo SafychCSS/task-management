@@ -42,6 +42,13 @@
             background-color: var(--red-400);
         }
     }
+
+    @media (min-width: $screen-sm) {
+        &_new-task {
+            padding: 15px 18px;
+            line-height: 18px;
+        }
+    }
 }
 
 .btn-action-board {
