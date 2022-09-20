@@ -82,5 +82,9 @@
         font-size: var(--heading-xl);
         font-weight: 700;
         color: var(--clr-secondary);
+
+        &:hover {
+            color: var(--purple-500);
+        }
     }
 }
