@@ -35,7 +35,7 @@
         }
     }
 
-    input:checked + .toggle-checkbox__btn{
+    input:checked + .toggle-checkbox__btn {
         &::after {
             transform: translateX(0);
         }

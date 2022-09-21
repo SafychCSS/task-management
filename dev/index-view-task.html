@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./static/css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="wrapper">
+    //= blocks/header.html
+    <div class="container container_board">
+        <div class="sidebar">
+            <div class="sidebar__container">
+                <p class="sidebar__title">All boards (3)</p>
+                <ul class="menu sidebar__menu">
+                    <li class="menu__item">
+                        <a class="menu__link menu__link_active" href="#">
+                            <svg class="menu__icon">
+                                <use href="./static/img/svg/sprite.svg#icon-menu"></use>
+                            </svg>
+                            Platform launch
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">
+                            <svg class="menu__icon">
+                                <use href="./static/img/svg/sprite.svg#icon-menu"></use>
+                            </svg>
+                            Marketing plan
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">
+                            <svg class="menu__icon">
+                                <use href="./static/img/svg/sprite.svg#icon-menu"></use>
+                            </svg>
+                            Roadmap
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link menu__link_new-board" href="#">
+                            <svg class="menu__icon">
+                                <use href="./static/img/svg/sprite.svg#icon-menu"></use>
+                            </svg>
+                            + Create new board
+                        </a>
+                    </li>
+                </ul>
+                <div class="toggle-theme sidebar__theme">
+                    <div class="toggle-theme__action">
+                        <svg class="toggle-theme__light">
+                            <use href="./static/img/svg/sprite.svg#icon-sun"></use>
+                        </svg>
+                        <div class="toggle-checkbox">
+                            <label>
+                                <input class="visibility-hidden toggle-checkbox__input" type="checkbox" data-theme="toggle" checked>
+                                <span class="toggle-checkbox__btn"></span>
+                            </label>
+                        </div>
+                        <svg class="toggle-theme__dark">
+                            <use href="./static/img/svg/sprite.svg#icon-moon"></use>
+                        </svg>
+                    </div>
+                </div>
+                <a class="sidebar__visibility" href="#">
+                    <svg class="sidebar__visibility-icon">
+                        <use href="./static/img/svg/sprite.svg#icon-eye-slash"></use>
+                    </svg>
+                    Hide Sidebar
+                </a>
+            </div>
+        </div>
+        <main class="board">
+            <div class="board__tasks tasks">
+                <p class="tasks__status tasks__status_wait">Todo (4)</p>
+                <a class="tasks__item task-card" href="#">
+                    <p class="task-card__title">Build UI for onboarding flow</p>
+                    <p class="task-card__sub-tasks-count">0 of 3 substasks</p>
+                </a>
+                <a class="tasks__item task-card" href="#">
+                    <p class="task-card__title">Build UI for search</p>
+                    <p class="task-card__sub-tasks-count">0 of 1 substasks</p>
+                </a>
+                <a class="tasks__item task-card" href="#">
+                    <p class="task-card__title">Build settings UI</p>
+                    <p class="task-card__sub-tasks-count">0 of 2 substasks</p>
+                </a>
+                <a class="tasks__item task-card" href="#">
+                    <p class="task-card__title">QA and test all major user journeys</p>
+                    <p class="task-card__sub-tasks-count">0 of 2 substasks</p>
+                </a>
+            </div>
+            <div class="board__tasks tasks">
+                <p class="tasks__status tasks__status_process">Doing (6)</p>
+                <a class="tasks__item task-card" href="#">
+                    <p class="task-card__title">Design settings and search pages</p>
+                    <p class="task-card__sub-tasks-count">1 of 3 substasks</p>
+                </a>
+                <a class="tasks__item task-card" href="#">
+                    <p class="task-card__title">Add account management endpoints</p>
+                    <p class="task-card__sub-tasks-count">2 of 3 substasks</p>
+                </a>
+                <a class="tasks__item task-card" href="#">
+                    <p class="task-card__title">Design onboarding flow</p>
+                    <p class="task-card__sub-tasks-count">1 of 3 substasks</p>
+                </a>
+                <a class="tasks__item task-card" href="#">
+                    <p class="task-card__title">Add search enpoints</p>
+                    <p class="task-card__sub-tasks-count">1 of 2 substasks</p>
+                </a>
+                <a class="tasks__item task-card" href="#">
+                    <p class="task-card__title">Add authentication endpoints</p>
+                    <p class="task-card__sub-tasks-count">1 of 2 substasks</p>
+                </a>
+                <a class="tasks__item task-card" href="#">
+                    <p class="task-card__title">Research pricing points of various competitors and trial different business models</p>
+                    <p class="task-card__sub-tasks-count">1 of 3 substasks</p>
+                </a>
+            </div>
+            <div class="board__tasks tasks">
+                <p class="tasks__status tasks__status_completed">Done (7)</p>
+                <a class="tasks__item task-card" href="#">
+                    <p class="task-card__title">Conduct 5 wireframe tests</p>
+                    <p class="task-card__sub-tasks-count">1 of 1 substasks</p>
+                </a>
+                <a class="tasks__item task-card" href="#">
+                    <p class="task-card__title">Create wireframe prototype</p>
+                    <p class="task-card__sub-tasks-count">1 of 1 substasks</p>
+                </a>
+                <a class="tasks__item task-card" href="#">
+                    <p class="task-card__title">Review results of usability tests and iterate</p>
+                    <p class="task-card__sub-tasks-count">3 of 3 substasks</p>
+                </a>
+                <a class="tasks__item task-card" href="#">
+                    <p class="task-card__title">Create paper prototypes and conduct 10 usability tests with potential customers</p>
+                    <p class="task-card__sub-tasks-count">2 of 2 substasks</p>
+                </a>
+                <a class="tasks__item task-card" href="#">
+                    <p class="task-card__title">Market discovery</p>
+                    <p class="task-card__sub-tasks-count">1 of 1 substasks</p>
+                </a>
+                <a class="tasks__item task-card" href="#">
+                    <p class="task-card__title">Competitor analysis</p>
+                    <p class="task-card__sub-tasks-count">2 of 2 substasks</p>
+                </a>
+                <a class="tasks__item task-card" href="#">
+                    <p class="task-card__title">Research the market</p>
+                    <p class="task-card__sub-tasks-count">2 of 2 substasks</p>
+                </a>
+            </div>
+            <div class="add-new-status board__new-status">
+                <a class="add-new-status__link" href="#">+ New Column</a>
+            </div>
+        </main>
+
+        <div class="task">
+            <div class="task__container">
+                <div class="task__header">
+                    <p class="task__title">Research pricing points of various competitors and trial different business models</p>
+                    <div class="task__action">
+                        <button class="btn-action-board">
+                            <span>&nbsp;</span>
+                        </button>
+                        <ul class="action-board">
+                            <li class="action-board__item">
+                                <a class="action-board__link" href="#">Edit Task</a>
+                            </li>
+                            <li class="action-board__item action-board__item_alert">
+                                <a class="action-board__link" href="#">Delete Task</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="task__description">We know what we're planning to build for version one. Now we need to finalise the first pricing model we'll use. Keep iterating the subtasks until we have a coherent proposition.</p>
+
+                <div class="task__sub-tasks sub-tasks">
+                    <p class=task__sub-title>Subtasks (2 of 3)</p>
+                    <div class="sub-tasks__item">
+                        <div class="checkbox">
+                            <label class="checkbox__label">
+                                <input type="checkbox" class="visibility-hidden">
+                                <span class="checkbox__box">
+                                    <svg class="checkbox__icon">
+                                        <use href="./static/img/svg/sprite.svg#icon-check"></use>
+                                    </svg>
+                                </span>
+                            </label>
+                        </div>
+                        <p class="sub-tasks__title">Research competitor pricing and business models</p>
+                    </div>
+                    <div class="sub-tasks__item">
+                        <div class="checkbox">
+                            <label class="checkbox__label">
+                                <input type="checkbox" class="visibility-hidden">
+                                <span class="checkbox__box">
+                                    <svg class="checkbox__icon">
+                                        <use href="./static/img/svg/sprite.svg#icon-check"></use>
+                                    </svg>
+                                </span>
+                            </label>
+                        </div>
+                        <p class="sub-tasks__title">Outline a business model that works for our solution</p>
+                    </div>
+                    <div class="sub-tasks__item">
+                        <div class="checkbox">
+                            <label class="checkbox__label">
+                                <input type="checkbox" class="visibility-hidden">
+                                <span class="checkbox__box">
+                                    <svg class="checkbox__icon">
+                                        <use href="./static/img/svg/sprite.svg#icon-check"></use>
+                                    </svg>
+                                </span>
+                            </label>
+                        </div>
+                        <p class="sub-tasks__title">Talk to potential customers about our proposed solution and ask for fair price expectancy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="task__overlay"></div>
+        </div>
+    </div>
+</div>
+<script src="./static/js/script.min.js"></script>
+</body>
+</html>
