@@ -12,6 +12,10 @@
     &__new-status {
         margin-top: 39px;
     }
+
+    @media (min-width: $screen-sm) {
+        padding: 24px 0 24px 285px;
+    }
 }
 
 .tasks {

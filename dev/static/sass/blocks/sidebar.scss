@@ -93,7 +93,8 @@
     }
 
     @media (min-width: $screen-sm) {
-        position: relative;
+        position: fixed;
+        top: 78px;
         z-index: 13;
 
         width: 285px;
